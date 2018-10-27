@@ -1,33 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/txtinicial"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="33dp"
+        android:text="Juego Clasico"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtinical2"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtinicial"
+        android:layout_marginTop="107dp"
+        android:text="Piedra,Papel y Tijera"
+        android:textSize="24sp" />
 
     <Button
-        android:background="@drawable/fondo_baton"
-        android:layout_centerInParent="true"
-        android:id="@+id/btnEjemplos"
-        android:text="Ejemplos"
-        android:textColor="@android:color/black"
-        android:textSize="16dp"
-        android:layout_width="120dp"
-        android:layout_height="80dp" />
+        android:id="@+id/btnjugador"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnjugar"
+        android:layout_marginTop="180dp"
+        android:onClick="evento"
+        android:text="Nuevo Jugador" />
+
     <Button
-        android:text="Ejercicios"
-        android:background="@drawable/fondo_baton"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnEjemplos"
-        android:id="@+id/btnEjercicios"
-        android:textColor="@android:color/black"
-        android:textSize="16dp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"/>
+        android:id="@+id/btnjugar"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnpuntaje"
+        android:layout_marginBottom="218dp"
+        android:onClick="evento"
+        android:text="jugar" />
 
-
-</LinearLayout>
+    <Button
+        android:id="@+id/btnpuntaje"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="105dp"
+        android:text="Puntaje" />
+</RelativeLayout>

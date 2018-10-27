@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bq097t.guia_5">
+    package="com.example.bq097t.nivelacion">
 
     <application
         android:allowBackup="true"
@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EjemploActivity" />
-        <activity android:name=".EjercicioActivity"></activity>
+        <activity android:name=".NuevoJugadorActivity" />
+        <activity android:name=".ListaActivity" />
+        <activity android:name=".JugarActivity"></activity>
     </application>
 
 </manifest>
